@@ -1,0 +1,15 @@
+.main {
+  @include MediaQuery($xs) {
+    width: 100%;
+    margin-left: 0;
+    min-height: 100vh;
+
+    .subMain {
+      padding: 15px 25px;
+    }
+  }
+  @include MediaQuery($sm) {
+    width: 85%;
+    margin-left: 15%;
+  }
+}

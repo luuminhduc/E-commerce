@@ -1,0 +1,23 @@
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  .circle-loading {
+    border: 5px solid lighten($color: $light-grey, $amount: 25%);
+    border-radius: 50%;
+    border-top-color: $secondary-color;
+    height: 80px;
+    width: 80px;
+    animation: loading 0.5s linear infinite;
+  }
+}
+@keyframes loading {
+  to {
+    transform: rotate(359deg);
+  }
+}

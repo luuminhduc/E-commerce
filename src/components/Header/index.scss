@@ -1,0 +1,22 @@
+.header {
+  width: 100%;
+  height: 50px;
+  box-shadow: $shadow_md;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+
+  .bar {
+    @include MediaQuery($xs) {
+      color: $dark-color;
+      font-size: 25px;
+      cursor: pointer;
+      display: block;
+    }
+    @include MediaQuery($sm) {
+      display: none;
+    }
+  }
+}
